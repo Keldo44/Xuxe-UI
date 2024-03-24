@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  background-color: #d9d9d9;
+}
+
+@font-face {
+  font-family: "GameBoy";
+  src: url("../fonts/Early GameBoy.ttf") format("truetype");
+}
+* {
+  font-family: "GameBoy";
+  text-shadow: 3px 3px 0 #000000;
+  color: #ffffff;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.grid > * {
+  width: calc(66.6666666667% - 20px);
+}
+.grid .xcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: calc(33.3333333333% - 20px);
+  border-radius: 12px;
+}
+.grid .xcard > * {
+  width: 100%;
+}
+.grid .stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  background-color: #00B553;
+  border: 6px solid #616161;
+  border-radius: 12px;
+  padding: 40px;
+}
+.grid .stats-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  border: 6px solid #616161;
+  border-radius: 12px;
+}
+.grid .stats-list .row {
+  width: 100%;
+  background-color: #DEDEDE;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0;
+}
+.grid .stats-list .row:first-child {
+  border-radius: 10px 10px 0 0;
+}
+.grid .stats-list .row:last-child {
+  border-radius: 0 0 10px 10px;
+}
+.grid .stats-list .row:nth-child(even) {
+  background-color: #616161;
+}
+.grid .stats-list .row > * {
+  width: fit-content;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(0deg, #DEDEDE 48%, #616161 52%);
+  border: 6px solid #000000;
+  border-radius: 14px;
+  padding: 10px 10px;
+}
+.flex_col .flex_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_col .flex_row > * {
+  margin: 0;
+}
+.flex_col .flex_row:last-child * {
+  color: #444;
+  text-shadow: 3px 3px 0 #fff;
+}
+.flex_col .flex_row img {
+  width: auto;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
